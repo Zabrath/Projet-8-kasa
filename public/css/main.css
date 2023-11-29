@@ -1,4 +1,7 @@
 .container {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
   margin: 20px 100px 20px 100px;
   border-radius: 25px;
   height: 829px;
@@ -15,12 +18,24 @@
 }
 .header__nav {
   display: flex;
-  gap: 15px;
+  gap: 57px;
+  color: #FF6060;
+  text-align: right;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
+  align-items: center;
 }
 
 a {
   all: unset;
   cursor: pointer;
+}
+
+.active {
+  text-decoration-line: underline;
 }
 
 .footer {
@@ -63,7 +78,10 @@ a {
 }
 
 .card {
-  background-color: red;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-color: #FF6060;
 }
 
 body {

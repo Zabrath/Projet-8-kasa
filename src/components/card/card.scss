@@ -1,6 +1,16 @@
 .card {
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    background-color: red;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  width: 340px;
+  height: 340px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #ff6060;
 }
