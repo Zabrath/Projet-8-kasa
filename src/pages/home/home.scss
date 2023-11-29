@@ -1,9 +1,7 @@
-.texteImageBackground{
-    background-color: aqua;
-}
-
-.image {
-    width: 1240px;
-    height: 223px;
-    object-fit: cover;
+.container {
+  padding: 15px;
+  margin: 20px 100px 20px 100px;
+  border-radius: 25px;
+  height: 829px;
+  background: blue;
 }

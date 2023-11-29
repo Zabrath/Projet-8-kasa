@@ -1,11 +1,19 @@
-import imageBackground from "../../images/imageAccueil.png";
+import Banner from "../../components/banner/banner";
+import Card from "../../components/card/card";
 
 function Home() {
   return (
-    <div>
-      <img className="image" src={imageBackground} alt="" />
-      <p className="texteImageBackground">Chez vous, partout et ailleurs</p>
-    </div>
+    <main>
+      <Banner />
+      <div className="container">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </main>
   );
 }
 

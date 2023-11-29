@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
+  margin: 20px 100px 20px 100px;
 }
 .header__logo {
   margin-right: auto;
@@ -8,4 +9,9 @@
 .header__nav {
   display: flex;
   gap: 15px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }

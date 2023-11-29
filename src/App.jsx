@@ -1,21 +1,35 @@
 import Header from "./components/header/header";
+import Banner from "./components/banner/banner";
 import Footer from "./components/footer/footer";
 import Home from "./pages/home/home";
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element: <div><Header /><Home /><Footer /></div>
+    path: "/",
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
-    path:'/blog',
-    element: <div>blog</div>
-  }
-])
+    path: "/propos",
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
+  },
+]);
 
 function App() {
-  return <RouterProvider router={router}/>
+  return <RouterProvider router={router} />;
 }
 
 export default App;
