@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__nav {
+  display: flex;
+  gap: 15px;
+}

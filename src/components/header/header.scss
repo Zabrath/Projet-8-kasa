@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 15px;
+  }
+}
