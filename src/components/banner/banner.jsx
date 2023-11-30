@@ -1,3 +1,4 @@
+import "./banner.scss";
 import imageBackground from "../../images/imageAccueil.png";
 
 function Banner() {

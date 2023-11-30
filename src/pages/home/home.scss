@@ -1,7 +1,10 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
   border-radius: 25px;
   background: #F6F6F6;
   margin: 20px 100px 20px 100px;
+  padding: 56px 50px;
 }

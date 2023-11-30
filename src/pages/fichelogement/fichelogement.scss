@@ -1,0 +1,28 @@
+.fichelogement {
+  h1 {
+    text-align: center;
+  }
+
+  .pictures-carousel {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-arrow {
+      font-size: 5rem;
+      color: red;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+
