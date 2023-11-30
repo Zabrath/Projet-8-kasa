@@ -56,18 +56,14 @@ function FicheLogement({ logements }) {
 
   return (
     <main className="fichelogement">
-      <h1>{logement.title}</h1>
       <div className="pictures-carousel">
-        <button className="carousel-arrow" onClick={prevImage}>
+        <button className="carousel-arrow arrow__left" onClick={prevImage}>
           <FontAwesomeIcon icon={faAngleLeft} />
         </button>
-        <button className="carousel-arrow" onClick={nextImage}>
+        <button className="carousel-arrow arrow__right" onClick={nextImage}>
           <FontAwesomeIcon icon={faAngleRight} />
         </button>
-        <img
-          src={logement.pictures[currentImageIndex]}
-          alt={`Picture ${currentImageIndex}`}
-        />
+        <img src={logement.pictures[currentImageIndex]} alt="" />
       </div>
     </main>
   );
