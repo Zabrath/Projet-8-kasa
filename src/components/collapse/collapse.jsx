@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import "./collapse.scss"; // Assurez-vous d'ajuster le chemin vers votre fichier de style
+import "./collapse.scss";
 
 function Collapse({ description, equipments }) {
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
@@ -9,47 +9,49 @@ function Collapse({ description, equipments }) {
 
   const toggleDescription = () => {
     setIsDescriptionOpen(!isDescriptionOpen);
-    setIsEquipmentsOpen(false);
   };
 
   const toggleEquipments = () => {
     setIsEquipmentsOpen(!isEquipmentsOpen);
-    setIsDescriptionOpen(false);
   };
 
   return (
     <div className="collapse-container">
-      <button className="collapse-button" onClick={toggleDescription}>
-        Description{" "}
-        {isDescriptionOpen ? (
-          <FontAwesomeIcon icon={faAngleUp} />
-        ) : (
-          <FontAwesomeIcon icon={faAngleDown} />
+      <div className="collapse-section">
+        <button className="collapse-button">
+          Description
+          <FontAwesomeIcon
+            className="collapse-icon"
+            icon={isDescriptionOpen ? faAngleUp : faAngleDown}
+            onClick={() => toggleDescription()}
+          />
+        </button>
+        {isDescriptionOpen && (
+          <div className="collapse-content">
+            <p>{description}</p>
+          </div>
         )}
-      </button>
-      {isDescriptionOpen && (
-        <div className="collapse-content">
-          <p>{description}</p>
-        </div>
-      )}
+      </div>
 
-      <button className="collapse-button" onClick={toggleEquipments}>
-        Equipments{" "}
-        {isEquipmentsOpen ? (
-          <FontAwesomeIcon icon={faAngleUp} />
-        ) : (
-          <FontAwesomeIcon icon={faAngleDown} />
+      <div className="collapse-section">
+        <button className="collapse-button">
+          Equipements
+          <FontAwesomeIcon
+            className="collapse-icon"
+            icon={isEquipmentsOpen ? faAngleUp : faAngleDown}
+            onClick={() => toggleEquipments()}
+          />
+        </button>
+        {isEquipmentsOpen && (
+          <div className="collapse-content">
+            <ul>
+              {equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </div>
         )}
-      </button>
-      {isEquipmentsOpen && (
-        <div className="collapse-content">
-          <ul>
-            {equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+      </div>
     </div>
   );
 }

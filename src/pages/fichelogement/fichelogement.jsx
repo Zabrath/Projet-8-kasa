@@ -24,7 +24,6 @@ function FicheLogement({ logements }) {
       <img className="image" src={logement.host.picture} alt="" />
       <RatingStars className="ratingStar" rating={logement.rating} />
       <Collapse
-        className="collapse"
         description={logement.description}
         equipments={logement.equipments}
       />

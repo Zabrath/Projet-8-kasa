@@ -13,7 +13,6 @@ function Card({ logement }) {
         />
         <div className="card__content">
           <h3 className="card__title">{logement.title}</h3>
-          {/* Ajoute d'autres éléments en fonction de tes besoins */}
         </div>
       </div>
     </Link>
