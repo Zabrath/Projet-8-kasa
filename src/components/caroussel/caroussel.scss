@@ -5,7 +5,14 @@
     height: 415px;
     
     
-
+    .compteur{
+      position: absolute;
+      color: white;
+      font-family: "Montserrat";
+      font-size: 25px;
+      bottom: 1%;
+      right: 50%;
+    }
     img {
       display: flex;
       width: 100%;

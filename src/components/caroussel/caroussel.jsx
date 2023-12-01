@@ -27,6 +27,9 @@ function Caroussel({ images }) {
       <button className="carousel-arrow arrow__right" onClick={nextImage}>
         <FontAwesomeIcon icon={faAngleRight} />
       </button>
+      <p className="compteur">
+        {currentImageIndex + 1} / {totalImages}
+      </p>
       <img src={images[currentImageIndex]} alt="" />
     </div>
   );
