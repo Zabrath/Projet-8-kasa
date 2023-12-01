@@ -1,30 +1,28 @@
 .card {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column-reverse;
+  position: relative;
   color: #fff;
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
   width: 340px;
   height: 340px;
   flex-shrink: 0;
   border-radius: 10px;
-  &__image{
+
+  &__title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    position: absolute;
+    color: white;
+    width: 45%;
+    bottom: 0%;
+    margin-left: 25px;
+  }
+  &__image {
     object-fit: cover;
     width: 340px;
     height: 340px;
     border-radius: 10px;
-  }
-  &__content{
-    position: relative;
-  }
-  &__title{
-    position: absolute;
-    padding: 15px;
-    width: 150px;
-    height: 52px;
+    
   }
 }

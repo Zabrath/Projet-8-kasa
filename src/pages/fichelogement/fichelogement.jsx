@@ -17,12 +17,18 @@ function FicheLogement({ logements }) {
   return (
     <main className="fichelogement">
       <Caroussel images={logement.pictures} />
-      <h1 className="titre">{logement.title}</h1>
-      <p className="location">{logement.location}</p>
-      <p className="tags">{logement.tags}</p>
-      <p className="hostname">{logement.host.name}</p>
-      <img className="image" src={logement.host.picture} alt="" />
-      <RatingStars className="ratingStar" rating={logement.rating} />
+      <div className="fichelogement__content">
+        <h1 className="fichelogement__titre">{logement.title}</h1>
+        <p className="fichelogement__location">{logement.location}</p>
+        <p className="fichelogement__tags">{logement.tags}</p>
+        <p className="fichelogement__hostname">{logement.host.name}</p>
+        <img
+          className="fichelogement__image"
+          src={logement.host.picture}
+          alt=""
+        />
+        <RatingStars rating={logement.rating} />
+      </div>
       <Collapse
         description={logement.description}
         equipments={logement.equipments}
