@@ -1,6 +1,7 @@
 .fichelogement {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   margin: 20px 100px 20px 100px;
   font-family: "Montserrat";
   color: #ff6060;
@@ -8,4 +9,50 @@
 .fichelogement__content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.fichelogement__columnRight {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.fichelogement__row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.fichelogement__titre {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+.fichelogement__location {
+  margin: 0;
+}
+.fichelogement__tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.fichelogement__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 25px;
+  margin-right: 8px;
+  padding: 8px 12px;
+  background-color: #ff6060;
+  color: #fff;
+  border: 1px solid #ff6060;
+  border-radius: 20px;
+}
+.fichelogement__image {
+  border-radius: 60px;
+  width: 64px;
+  height: 64px;
+}
+.fichelogement__hostname {
+  width: 50px;
 }

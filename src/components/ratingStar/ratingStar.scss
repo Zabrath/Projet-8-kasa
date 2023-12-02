@@ -1,5 +1,8 @@
 .rating-stars {
+    display: flex;
+    gap: 15px;
     .fa-star {
+      font-size: 30px;
       color: #E3E3E3;
     }
   

@@ -15,21 +15,34 @@ function FicheLogement({ logements }) {
     return <Error />;
   }
 
+  const tagsList = logement.tags.map((tag, index) => (
+    <li key={index} className="fichelogement__tag">
+      {tag}
+    </li>
+  ));
+
   return (
     <main className="fichelogement">
       <Caroussel images={logement.pictures} />
       <div className="fichelogement__content">
-        <h1 className="fichelogement__titre">{logement.title}</h1>
-        <p className="fichelogement__location">{logement.location}</p>
-        <p className="fichelogement__tags">{logement.tags}</p>
-        <p className="fichelogement__hostname">{logement.host.name}</p>
-        <img
-          className="fichelogement__image"
-          src={logement.host.picture}
-          alt=""
-        />
-        <RatingStars rating={logement.rating} />
+        <div className="fichelogement__columnLeft">
+          <h1 className="fichelogement__titre">{logement.title}</h1>
+          <p className="fichelogement__location">{logement.location}</p>
+          <ul className="fichelogement__tags">{tagsList}</ul>
+        </div>
+        <div className="fichelogement__columnRight">
+          <div className="fichelogement__row">
+            <p className="fichelogement__hostname">{logement.host.name}</p>
+            <img
+              className="fichelogement__image"
+              src={logement.host.picture}
+              alt=""
+            />
+          </div>
+          <RatingStars rating={logement.rating} />
+        </div>
       </div>
+
       <Collapse
         description={logement.description}
         equipments={logement.equipments}
