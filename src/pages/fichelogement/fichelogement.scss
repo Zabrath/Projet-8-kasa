@@ -18,6 +18,7 @@
   &__row {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: 25px;
   }
   &__titre {
@@ -55,5 +56,10 @@
   &__hostname{
     width: 50px;
 
+  }
+  &__dropdown{
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
   }
 }
