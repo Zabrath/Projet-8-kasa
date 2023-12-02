@@ -10,9 +10,9 @@
   &__nav {
     display: flex;
     gap: 57px;
-    color: #FF6060;
+    color: #ff6060;
     text-align: right;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -27,6 +27,19 @@ a {
 }
 
 .active {
-
-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+@media (max-width: 375px) {
+  .header {
+    margin: 20px 20px;
+    &__logo {
+      width: 145px;
+      height: 46.881px;
+      margin-right: auto;
+    }
+    &__nav {
+      gap: 15px;
+      font-size: 15px;
+    }
+  }
 }

@@ -10,17 +10,17 @@ function Dropdown({ title, text }) {
     setIsEquipmentsOpen(!isEquipmentsOpen);
   };
   return (
-    <div className="collapse-section">
-      <button className="collapse-button">
+    <div className="dropdownSection">
+      <button className="dropdownSection__button">
         {title}
         <FontAwesomeIcon
-          className="collapse-icon"
+          className="dropdownSection__icon"
           icon={isEquipmentsOpen ? faAngleUp : faAngleDown}
           onClick={() => toggleEquipments()}
         />
       </button>
       {isEquipmentsOpen && (
-        <div className="collapse-content">
+        <div className="dropdownSection__content">
           <ul>
             {Array.isArray(text) ? (
               text.map((textList) => <li key={Math.random()}>{textList}</li>)

@@ -11,3 +11,18 @@
     }
   }
   
+
+  @media (max-width: 375px) {
+    .rating-stars {
+      display: flex;
+      gap: 10px;
+      .fa-star {
+        font-size: 15px;
+        color: #E3E3E3;
+      }
+    
+      .filled {
+        color:#FF6060;
+      }
+    }
+  }

@@ -13,7 +13,7 @@
   &__columnRight {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
   }
   &__row {
     display: flex;
@@ -26,9 +26,11 @@
     font-style: normal;
     font-weight: 500;
     margin: 0;
+    margin-bottom: 5px;
   }
   &__location {
     margin: 0;
+    margin-bottom: 25px;
   }
   &__tags {
     list-style: none;
@@ -46,7 +48,7 @@
     background-color: #ff6060;
     color: #fff;
     border: 1px solid #ff6060;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   &__image {
     border-radius: 60px;
@@ -62,4 +64,36 @@
     flex-direction: row;
     gap: 76px;
   }
+}
+
+
+@media (max-width: 375px) {
+    .fichelogement{
+      margin: 0px 20px;
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+      &__columnRight {
+        display: flex;
+        gap: 98px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+      }
+      &__image {
+        width: 32px;
+        height: 32px;
+      }
+      &__hostname{
+        font-size: 12px;
+    
+      }
+      &__dropdown{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
 }
