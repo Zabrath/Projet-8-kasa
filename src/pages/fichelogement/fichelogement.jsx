@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Caroussel from "../../components/caroussel/caroussel";
 import Collapse from "../../components/collapse/collapse";
 import RatingStars from "../../components/ratingStar/ratingStar";
+import Error from "../error/error";
 import "./fichelogement.scss";
 
 function FicheLogement({ logements }) {
@@ -11,7 +12,7 @@ function FicheLogement({ logements }) {
   const logement = logements.find((logement) => logement.id === logementId);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Error />;
   }
 
   return (

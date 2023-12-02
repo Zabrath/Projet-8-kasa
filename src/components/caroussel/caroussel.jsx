@@ -19,6 +19,14 @@ function Caroussel({ images }) {
     );
   };
 
+  if (totalImages === 1) {
+    return (
+      <div className="pictures-carousel">
+        <img src={images[0]} alt="" />
+      </div>
+    );
+  }
+
   return (
     <div className="pictures-carousel">
       <button className="carousel-arrow arrow__left" onClick={prevImage}>
