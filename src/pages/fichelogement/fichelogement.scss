@@ -56,6 +56,7 @@
     height: 64px;
   }
   &__hostname{
+    margin-top: 15px;
     width: 50px;
 
   }
@@ -88,12 +89,26 @@
       }
       &__hostname{
         font-size: 12px;
+        margin-top: 0px;
     
       }
       &__dropdown{
         display: flex;
         flex-direction: column;
         gap: 15px;
+      }
+      &__tag {
+        font-size: 10px;
+        height: 18px;
+        text-align: center;
+        border-radius: 5px;
+
+      }
+      &__titre {
+        font-size: 18px;
+      }
+      &__location {
+        font-size: 12px;
       }
     }
 }

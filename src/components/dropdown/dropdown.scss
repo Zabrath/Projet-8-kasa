@@ -1,5 +1,5 @@
 .dropdownSection {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -14,6 +14,7 @@
     border-radius: 10px;
     font-family: "Montserrat";
     font-size: 24px;
+    padding: 10px;
   }
   .dropdownSection__icon{
     padding-right: 5px;

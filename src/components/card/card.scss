@@ -16,13 +16,31 @@
     color: white;
     width: 45%;
     bottom: 0%;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-bottom: 12px;
   }
   &__image {
     object-fit: cover;
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 335px;
+    height: 255px;
+    &__image {
+      width: 335px;
+      height: 255px;
+      flex-shrink: 0;
+    }
+    &__title {
+      width: 45%;
+      bottom: 0%;
+      margin-left: 19px;
+      margin-bottom: 12px;
+    }
   }
 }

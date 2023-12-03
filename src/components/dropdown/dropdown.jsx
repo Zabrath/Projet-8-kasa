@@ -15,7 +15,7 @@ function Dropdown({ title, text }) {
         {title}
         <FontAwesomeIcon
           className="dropdownSection__icon"
-          icon={isEquipmentsOpen ? faAngleUp : faAngleDown}
+          icon={isEquipmentsOpen ? faAngleDown : faAngleUp}
           onClick={() => toggleEquipments()}
         />
       </button>
