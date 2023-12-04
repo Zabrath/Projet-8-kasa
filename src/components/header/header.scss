@@ -36,6 +36,10 @@ a {
       width: 145px;
       height: 46.881px;
       margin-right: auto;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
     }
     &__nav {
       gap: 15px;

@@ -14,15 +14,16 @@
 
   &__texteImage {
     position: absolute;
-    top: 40%;
-    right: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-
     font-family: "Montserrat";
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
+    text-align: center;
   }
 }
 
@@ -41,17 +42,14 @@
     }
   
     &__texteImage {
-      position: absolute;
-      padding-top: 15px;
-      margin-left: 25px;
-      left: 6%;
-      right: 28%;
-      color: #fff;
+      text-align: left;
+      left: 40px;
+      max-width: 217px;
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
       line-height: 100%; /* 24px */
-      top: 20%;
+      transform: translate(0, -50%);
     }
   }
 }

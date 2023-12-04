@@ -2,12 +2,13 @@ import React from "react";
 import Dropdown from "../../components/dropdown/dropdown";
 import Banner from "../../components/banner/banner";
 import "./apropos.scss";
+import imageApropos from "../../images/imageApropos.png";
 
 function Apropos() {
   return (
     <>
       <main>
-        <Banner />
+        <Banner image={imageApropos} key={"imageBanner"} />
         <div className="dropdown">
           <Dropdown
             title={"Fiabilité"}
