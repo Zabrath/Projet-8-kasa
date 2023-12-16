@@ -1,15 +1,17 @@
 .dropdownSection {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 55px 0fr;
   overflow: hidden;
-  height: 50px;
   transition: all 0.5s;
   &.open {
-    height: auto;
     grid-template-rows: 55px 1fr;
     svg{
       rotate: 180deg;
+    }
+    .dropdownSection__content {
+      padding: 23px 15px 15px 15px;
+
     }
   }
   svg{
@@ -34,10 +36,14 @@
   }
   .dropdownSection__icon{
     padding-right: 5px;
+    cursor: pointer;
   }
   .dropdownSection__content {
+    position: relative;
+    z-index: -1;
+    padding: 0 15px;
+    margin-top: -8px;
     line-height: 1.5;
-    padding: 15px;
     background-color: #f6f6f6;
     color: #ff6060;
     font-family: "Montserrat";
@@ -62,14 +68,18 @@ li {
 @media (max-width: 375px) {
   .dropdownSection {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: 30px 0fr;
+    &.open {
+      grid-template-rows: 30px 1fr;
+    }
 
     .dropdownSection__button {
       font-size: 15px;
+      height: 30px;
     }
     .dropdownSection__content {
-      font-size: 18px;
+      font-size: 12px;
     }
   }
 }
+
