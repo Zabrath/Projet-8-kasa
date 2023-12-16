@@ -45,14 +45,14 @@ function FicheLogement({ logements }) {
         </div>
         <div className="fichelogement__dropdown">
           <Dropdown
-            title={"Equipements"}
+            title={"Description"}
             text={logement.description}
-            key={"Equipements"}
+            key={"Description"}
           />
           <Dropdown
-            title={"Description"}
+            title={"Equipements"}
             text={logement.equipments}
-            key={"Description"}
+            key={"Equipements"}
           />
         </div>
       </main>
