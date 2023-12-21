@@ -4,6 +4,8 @@ import Banner from "../../components/banner/banner";
 import "./apropos.scss";
 import imageApropos from "../../images/imageApropos.png";
 
+// page contenant le composant banner avec une image en props et les dropdown en props également mais texte brut
+
 function Apropos() {
   return (
     <>

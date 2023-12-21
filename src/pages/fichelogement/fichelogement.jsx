@@ -6,6 +6,8 @@ import Error from "../error/error";
 import "./fichelogement.scss";
 import Dropdown from "../../components/dropdown/dropdown";
 
+// Page intégrant les props rattachés au JSON, permettant des fiches logements personnalisées via les composants en props.
+
 function FicheLogement({ logements }) {
   const { logementId } = useParams();
 

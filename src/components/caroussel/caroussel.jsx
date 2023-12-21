@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./caroussel.scss";
 
+// création d'un carrousel avec image en props a remplir dans la page qui intègre le composant
+
 function Caroussel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const totalImages = images.length;

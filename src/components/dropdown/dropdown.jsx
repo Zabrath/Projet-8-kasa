@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import "./dropdown.scss";
 
+// création du composant dropdown avec titre et texte en props a rmeplir dans la page qui intègre le composant
+
 function Dropdown({ title, text }) {
   const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
   const [classActive, setClassActive] = useState("");

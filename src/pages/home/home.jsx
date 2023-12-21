@@ -5,6 +5,8 @@ import Card from "../../components/card/card";
 import logements from "../../data/data.json";
 import imageBackground from "../../images/imageAccueil.png";
 
+// page home intégrant la banner avec props et des Card en props également
+
 function Home() {
   return (
     <main>
